@@ -1,4 +1,4 @@
-1. PEAS Framework: P - Performance measure, E- Environment,A- Actuators, S- Sensors
+1. PEAS Framework: P - Performance measure, E- Environment, A- Actuators, S- Sensors
 
 Performance Measure:
 Does it get to it's end goal/location?
@@ -24,9 +24,35 @@ Spehedometer: To measure vehicle speed and distance traveled
 
 2. Directed graph and search tree
 
+```mermaid
+graph LR
+    Nairobi -->|15.5 km| Kiambu 
+    Kiambu -->|152 km| Nakuru
+    Nakuru -->|107 km| Kericho
+    Kericho -->|84 km| Kisumu
+    Nairobi -->|143 km| Narok
+    Narok -->|81 km| Bomet
+    Bomet -->|73.2 km| Nyamira  
+    Nyamira -->|90.9 km| Kisumu 
+``` 
 
+### Search Tree
+```mermaid
+graph TD
+    Nairobi -->|143 km| Narok
+    Nairobi -->|91 km| Naivasha
+    Naivasha -->|143 km| Nakuru
+    Narok -->|81 km| Bomet
+    Bomet -->|73.2 km| Sondu
+     -->|90.9 km| Kisumu1["Kisumu"]
+    Nairobi -->|15.5 km| Kiambu  
+    Kiambu -->|152 km| Nakuru
+    Nakuru -->|107 km| Kericho
+    Kericho -->|84 km| Kisumu2["Kisumu"]
+```
 
 3. Nairobi to Kisumu Paths and Path cost function
+
 Path A = 353 Km
 Nairobi to Naivasha town: 91Km
 Naivasha to Nakuru: 71 Km
