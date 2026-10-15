@@ -74,3 +74,5 @@ Path B: Nairobi → Narok → Bomet → Sondu → Kisumu
 
 g(B)= 143+81+79+53 = 356 Km
 
+
+![Cool Team Photo](Cool%20team%20photo.jpeg)
